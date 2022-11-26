@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <script src="index.js" defer></script>
+  <body>
+    <main>
+      <h1>drum kit</h1>
+      <section class="keys-wrapper">
+        <div class="keys">
+          <div data-key="81" class="key">
+            <kbd>Q</kbd>
+            <span class="sound">clap</span>
+          </div>
+          <div data-key="87" class="key">
+            <kbd>W</kbd>
+            <span class="sound">hihat</span>
+          </div>
+          <div data-key="69" class="key">
+            <kbd>E</kbd>
+            <span class="sound">kick</span>
+          </div>
+          <div data-key="82" class="key">
+            <kbd>R</kbd>
+            <span class="sound">openhat</span>
+          </div>
+          <div data-key="84" class="key">
+            <kbd>T</kbd>
+            <span class="sound">boom</span>
+          </div>
+          <div data-key="89" class="key">
+            <kbd>Y</kbd>
+            <span class="sound">ride</span>
+          </div>
+          <div data-key="85" class="key">
+            <kbd>U</kbd>
+            <span class="sound">snare</span>
+          </div>
+          <div data-key="73" class="key">
+            <kbd>I</kbd>
+            <span class="sound">tom</span>
+          </div>
+          <div data-key="79" class="key">
+            <kbd>O</kbd>
+            <span class="sound">tink</span>
+          </div>
+        </div>
+        <!-- ============================================================================ -->
+        <!-- ============================================================================ -->
+        <section class="second-set">
+          <h2>Keyboard sounds</h2>
+          <div class="keys sec">
+            <div class="key" data-key="65">
+              <kbd>A</kbd>
+              <!-- <span class="sound">TR hard hit</span> -->
+            </div>
+
+            <div class="key" data-key="83">
+              <kbd>S</kbd>
+              <!-- <span class="sound">hard hit</span> -->
+            </div>
+
+            <div class="key" data-key="68">
+              <kbd>D</kbd>
+              <!-- <span class="sound">ML hit</span> -->
+            </div>
+
+            <div class="key" data-key="70">
+              <kbd>F</kbd>
+              <!-- <span class="sound">hard TR click</span> -->
+            </div>
+
+            <div class="key" data-key="71">
+              <kbd>G</kbd>
+              <!-- <span class="sound">TR soft click</span> -->
+            </div>
+
+            <div class="key" data-key="72">
+              <kbd>H</kbd>
+              <!-- <span class="sound">single hit</span> -->
+            </div>
+
+            <div class="key" data-key="74">
+              <kbd>J</kbd>
+              <!-- <span class="sound">single ML hit</span> -->
+            </div>
+
+            <div class="key" data-key="75">
+              <kbd>K</kbd>
+              <!-- <span class="sound">soft hit</span> -->
+            </div>
+            <div class="key" data-key="76">
+              <kbd>L</kbd>
+              <!-- <span class="sound">TR hit</span> -->
+            </div>
+            <div class="key" data-key="32">
+              <kbd>Space</kbd>
+              <!-- <span class="sound">vintage hit</span> -->
+            </div>
+            <div class="key" data-key="8">
+              <kbd>Backspace</kbd>
+              <!-- <span class="sound">classic return</span> -->
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer>
+        <div class="credits">
+          <h2>Made with 💖 By: Anas Badran</h2>
+        </div>
+      </footer>
+    </main>
+    <div class="sounds">
+      <div class="set1">
+        <audio data-key="65" src="audio/set1/typewriter-hard-hit.wav"></audio>
+        <audio data-key="83" src="audio/set1/hard-hit.wav"></audio>
+        <audio data-key="68" src="audio/set1/mechanical-hit.wav"></audio>
+        <audio data-key="70" src="audio/set1/hard-typewriter-click.wav"></audio>
+        <audio data-key="71" src="audio/set1/typewriter-soft-click.wav"></audio>
+        <audio data-key="72" src="audio/set1/single-hit.wav"></audio>
+        <audio data-key="74" src="audio/set1/single-mechanical-hit.wav"></audio>
+        <audio data-key="75" src="audio/set1/soft-hit.wav"></audio>
+        <audio data-key="76" src="audio/set1/typewriter-hit.wav"></audio>
+        <audio data-key="32" src="audio/set1/vintage-hit.wav"></audio>
+        <audio data-key="8" src="audio/set1/classic-return.wav"></audio>
+      </div>
+      <div class="set2">
+        <audio data-key="81" src="audio/set2/clap.wav"></audio>
+        <audio data-key="87" src="audio/set2/hihat.wav"></audio>
+        <audio data-key="69" src="audio/set2/kick.wav"></audio>
+        <audio data-key="82" src="audio/set2/openhat.wav"></audio>
+        <audio data-key="84" src="audio/set2/boom.wav"></audio>
+        <audio data-key="89" src="audio/set2/ride.wav"></audio>
+        <audio data-key="85" src="audio/set2/snare.wav"></audio>
+        <audio data-key="73" src="audio/set2/tom.wav"></audio>
+        <audio data-key="79" src="audio/set2/tink.wav"></audio>
+      </div>
+    </div>
+  </body>
+</html>

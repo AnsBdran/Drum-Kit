@@ -1,0 +1,102 @@
+@import "./sub/vars", "./sub/mixins", "./sub/reset";
+
+* {
+  &:not(.keys *) {
+    color: $text;
+  }
+  font: {
+    family: $font;
+  }
+}
+
+main {
+  min-height: 100vh;
+  background-color: $bg;
+  @include flex(column, space-evenly);
+  align-items: center;
+  & h1 {
+    text-transform: uppercase;
+    padding: 1rem;
+    letter-spacing: 3px;
+    font-size: 3em;
+  }
+}
+
+.keys-wrapper {
+  @include flex(column, space-evenly);
+  gap: 2rem;
+  width: 100%;
+  margin-block: 3rem;
+  // border: 2px solid #a10035;
+  min-height: 70vh;
+  max-width: 90%;
+  & .keys {
+    @include flex(row, space-evenly);
+    gap: 1.2rem;
+    font-size: 1.2em;
+    // border: 2px solid magenta;
+    flex-wrap: wrap;
+  }
+}
+
+* {
+  // border: 2px solid white;
+}
+
+.key {
+  color: $alt-text;
+  // width: 120px;
+  min-width: max(6vw, 80px);
+  min-height: max(6vw, 80px);
+  border-radius: $radius;
+  background-color: $alt-bg;
+  padding-top: 1em;
+  text-align: center;
+  position: relative;
+
+  & span {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    color: #a10035;
+    font-size: 0.7em;
+  }
+  &::before {
+    content: "";
+    border: 4px solid $alt-bg;
+    border-radius: $radius;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    scale: 0.99;
+    transition: 0.2s;
+  }
+}
+
+.play {
+  box-shadow: inset 4px 4px 15px #333;
+  background-color: darken($color: $alt-bg, $amount: 15%);
+  &::before {
+    z-index: 1;
+    scale: 1.17;
+  }
+}
+
+footer {
+  margin-bottom: 3rem;
+}
+
+.second-set h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sec div {
+  @include center;
+  padding: 0.4rem;
+}
